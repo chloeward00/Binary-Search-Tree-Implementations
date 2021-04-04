@@ -2,13 +2,9 @@ class Node: # will be used in both BST
 
     def __init__(self, name , number, address):
         self.name = name
-
         self.number = number
-
         self.address = address
-
         self.left_child = None
-
         self.right_child = None
 
 class Binary_search_tree_Names:
@@ -104,9 +100,7 @@ class Binary_search_tree_Names:
 
 
 class Binary_search_tree_numbers:
-
     
-
     def insert(self, current,name,number,address):
 
         if current ==  None:
@@ -125,7 +119,6 @@ class Binary_search_tree_numbers:
         if current !=None:
 
             self.print_tree(current.left_child)
-
             print("Name: " + current.name + "\nNumber: " + str(current.number) + "\nAddress: " + current.address +"\n")
 
         if current != None:
