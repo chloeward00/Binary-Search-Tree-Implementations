@@ -42,13 +42,9 @@ class Binary_search_tree_Names:
     def find_name(self, current,name): # FUNCTION WILL FIND NAME USER INPUTS
 
         if current == None:
-
             print (name + " does not exist in phonebook.\n")
-
-
         elif current.name == name:
             print ("****CONTACT FOUND *****\nName: " + current.name + "\nNumber: " + str(current.number)+"\n---------------------------\n")
-
         elif current.name < name:
             return self.find_name(current.right_child, name) #recursion
         else:
